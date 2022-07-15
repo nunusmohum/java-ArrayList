@@ -5,7 +5,7 @@ class ArrayList {
     int lastIndex = -1;
 
     ArrayList() {
-        datas = new int[3]; // 이 부분은 수정할 수 없습니다.
+        datas = new int[2]; // 이 부분은 수정할 수 없습니다.
     }
 
     public void add(int data) {
@@ -81,5 +81,9 @@ class ArrayList {
             }
             System.out.printf("%d : %d\n", i, datas[i]);
         }
+    }
+
+    public int getArrayLength() {
+        return datas.length;
     }
 }
