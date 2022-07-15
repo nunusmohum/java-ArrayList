@@ -26,6 +26,22 @@ public class AppTest {
     }
 
     @Test
+    void addAt() {
+        ArrayList al = new ArrayList();
+        al.add(100);
+        al.add(200);
+        al.add(300);
+        al.addAt(500,2);
+        al.add(400);
+
+        assertEquals(100, al.get(0));
+        assertEquals(200, al.get(1));
+        assertEquals(500, al.get(2));
+        assertEquals(300, al.get(3));
+        assertEquals(400, al.get(4));
+    }
+
+    @Test
     void get() {
         ArrayList al = new ArrayList();
         al.add(100);

@@ -16,7 +16,7 @@ class ArrayList {
         datas[lastIndex] = data;
     }
 
-    public void add(int data, int index) {
+    public void addAt(int data, int index) {
         extendSize();
 
         lastIndex++;
@@ -41,7 +41,6 @@ class ArrayList {
             }
 
             datas = newArr;
-            System.out.printf("배열의 크기가 증가되었습니다. %d => %d\n", beforeLength, datas.length);
         }
     }
 
